@@ -48,7 +48,13 @@
     dest: "/etc/logrotate.d/metron-ambari"
     mode: 0644
 
+- name: Bring in more repo info
+  shell: yum install -y epel-release
+
 - name: Install Nodejs repository
-  shell: curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
+  shell: yum install -y nodejs
   args:
     warn: false
+
+- name: Install NPM
+  shell: yum install -y npm
