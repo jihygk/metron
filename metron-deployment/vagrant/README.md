@@ -3,6 +3,8 @@ This guide can be used to deploy an Ambari-managed Hadoop cluster containing Met
 
 > Please note that in order to execute the job well, we actually tuned the RAM allocation from **8G** to **10G** in the *Vagrantfile* under the project
 
+> Please note that all installation commands should be using sudo or root user.
+
 ## Prerequisites
 
 The computer used to deploy Apache Metron will need to have the following components installed.
