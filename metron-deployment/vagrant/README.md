@@ -14,6 +14,17 @@ The computer used to deploy Apache Metron will need to have the following compon
  - [Virtualbox](https://virtualbox.org) 5.0+
  - Python 2.7
  - Maven 3.3.9
+ 
+### Mac Specific quickpass
+If you are on Mac, you could *brew install* the required packages using following command and directly go to the ***Actual Kickoff Run*** section:
+
+```
+brew cask install vagrant virtualbox java docker
+brew install maven@3.3 git
+pip install ansible==2.2.2.0
+vagrant plugin install vagrant-hostmanager
+open /Applications/Docker.app
+```
 
 ### Install Python
 In you Centos system, install python using the following commands:
@@ -130,7 +141,7 @@ vagrant provision
 ```
 to rerun the provision process, you could kick off the provision process multiple times until it ends up to the success stage. 
 
-Wait until the process end (around 40mins to build if your maven build and ambari server bootstraping runs well) , usually like below:
+Wait until the process end (around 1.5 hour to build if your maven build and ambari server bootstraping runs well) , usually like below:
 
 ```
  TASK [deployment-report : debug] ***********************************************
