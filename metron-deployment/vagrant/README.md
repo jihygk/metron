@@ -84,8 +84,7 @@ yum -y install kernel-headers kernel-devel binutils glibc-headers glibc-devel fo
 * Add VirtualBox to repo list:
 
 ```
-cd /etc/yum.repo.d/
-wget http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo
+wget -P /etc/yum.repos.d/ http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo
 ```
 
 * Install VirtualBox 5.1:
