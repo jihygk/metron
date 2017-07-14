@@ -25,8 +25,9 @@ pip install ansible==2.2.2.0
 vagrant plugin install vagrant-hostmanager
 open /Applications/Docker.app
 ```
+> As none Mac environment hasn't been proved yet, the following instructions could be change based on your situation, just make sure the required components are installed in your system, then you could proceed to ***Actual Kickoff Run*** section
 
-### Install Python
+### Install Python 
 In you Centos system, install python using the following commands:
 
 ```shell
