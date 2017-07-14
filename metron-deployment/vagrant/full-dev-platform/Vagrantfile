@@ -45,7 +45,7 @@ puts " Running with ansible-skip-tags: " + ansibleSkipTags.split(",").to_s if an
 hosts = [{
     hostname: "node1",
     ip: "192.168.66.121",
-    memory: "8192",
+    memory: "10240",
     cpus: 4,
     promisc: 2  # enables promisc on the 'Nth' network interface
 }]
