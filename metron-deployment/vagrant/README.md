@@ -79,7 +79,7 @@ source /etc/profile.d/maven.sh
 
 ```
 yum -y install gcc dkms make qt libgomp patch 
-yum -y install kernel-headers kernel-devel binutils glibc-headers glibc-devel font-forge
+yum -y install kernel-headers kernel-devel binutils glibc-headers glibc-devel font-forge python-devel libxml2-dev libxslt-dev
 ```
 * Add VirtualBox to repo list:
 
