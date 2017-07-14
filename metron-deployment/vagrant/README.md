@@ -96,6 +96,21 @@ yum install -y VirtualBox-5.1
 /sbin/rcvboxdrv setup
 ```
 
+You may be required to install a specific `kernel-devel` version:
+
+```
+[root@localhost ~]# /sbin/rcvboxdrv setup
+vboxdrv.sh: Stopping VirtualBox services.
+vboxdrv.sh: Building VirtualBox kernel modules.
+This system is not currently set up to build kernel modules (system extensions).
+Running the following commands should set the system up correctly:
+
+  yum install kernel-devel-3.10.0-514.el7.x86_64
+(The last command may fail if your system is not fully updated.)
+  yum install kernel-devel
+vboxdrv.sh: failed: Look at /var/log/vbox-install.log to find out what went wrong.
+```
+
 * Install Vagrant:
 
 ```
