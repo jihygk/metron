@@ -34,7 +34,7 @@ In you Centos system, install python using the following commands:
 yum install epel-release -y
 yum update -y
 yum install vim tmux htop -y
-yum install git wget curl rpm tar unzip bzip2 wget createrepo yum-utils ntp python-pip psutils python-psutil ntp libffi-devel gcc openssl-devel -y
+yum install git wget curl rpm tar unzip bzip2 wget createrepo yum-utils ntp python-pip psutils python-devel libxml2-dev libxslt-dev python-psutil ntp libffi-devel gcc openssl-devel -y
 ```
 
 ### Install Ansible
